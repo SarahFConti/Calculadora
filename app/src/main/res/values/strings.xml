@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="Text_calculadora">Calculadora</string>
+    <string name="Text_resultado">Resultado</string>
+    <string name="Button_calcular">Calcular</string>
+    <string name="RadioGroup_soma">Soma</string>
+    <string name="RadioGroup_multiplicação">Multiplicação</string>
+    <string name="RadioGroup_divisão">Divisão</string>
+    <string name="RadioGroup_subtração">Subtração</string>
+</resources>
