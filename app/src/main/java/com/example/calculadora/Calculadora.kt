@@ -1,6 +1,7 @@
 package com.example.calculadora
 
-class Calculadora {
+class Calculadora
+{
 
     fun somar(n1:Int, n2:Int): Int{
         val resultado = n1 + n2

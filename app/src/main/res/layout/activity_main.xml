@@ -7,10 +7,11 @@
     tools:context=".MainActivity">
 
    <TextView
-       android:id="@+id/text_calculadora"
+       android:id="@+id/Text_calculadora"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:text="@string/Text_calculadora"
+       android:fontFamily="sans-serifgit -black"
        android:textAppearance="@style/TextAppearance.AppCompat.Large"
        app:layout_constraintBottom_toBottomOf="parent"
        app:layout_constraintEnd_toEndOf="parent"
@@ -19,13 +20,14 @@
        app:layout_constraintTop_toTopOf="parent"
        app:layout_constraintVertical_bias="0.084" />
 
-        <TextView
-        android:id="@+id/resultado"
+    <TextView
+        android:id="@+id/Resultado"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:hint="@string/Text_resultado"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#673AB7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.881"
@@ -35,27 +37,27 @@
 
 
     <EditText
-        android:id="@+id/campo1"
+        android:id="@+id/Campo1"
         android:layout_width="128dp"
         android:layout_height="41dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.519"
-        app:layout_constraintStart_toEndOf="@+id/campo2"
-        app:layout_constraintTop_toBottomOf="@+id/resultado"
+        app:layout_constraintStart_toEndOf="@+id/Campo2"
+        app:layout_constraintTop_toBottomOf="@+id/Resultado"
         app:layout_constraintVertical_bias="0.068" />
 
 
 
     <EditText
-        android:id="@+id/campo2"
+        android:id="@+id/Campo2"
         android:layout_width="128dp"
         android:layout_height="41dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.275"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_calculadora"
+        app:layout_constraintTop_toBottomOf="@+id/Text_calculadora"
         app:layout_constraintVertical_bias="0.168" />
 
 
@@ -65,15 +67,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="58dp"
-        android:id="@+id/radioGroup"
-        app:layout_constraintTop_toTopOf="@id/campo2"
+        android:id="@+id/RadioGroup"
+        app:layout_constraintTop_toTopOf="@id/Campo2"
         >
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="55dp"
             android:text="Somar"
-            android:id="@+id/soma_button"
+            android:id="@+id/Soma_button"
             android:layout_gravity="center_horizontal"
             android:checked="false"
             android:textSize="25dp" />
@@ -82,7 +84,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Dividir"
-            android:id="@+id/dividir_button"
+            android:id="@+id/Dividir_button"
             android:layout_gravity="center_horizontal"
             android:checked="false"
             android:textSize="25dp"
@@ -92,7 +94,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Multiplicar"
-            android:id="@+id/multiplica_button"
+            android:id="@+id/Multiplica_button"
             android:layout_gravity="center_horizontal"
             android:checked="false"
             android:textSize="25dp"
@@ -115,7 +117,7 @@
 
 
     <Button
-        android:id="@+id/calcular_button"
+        android:id="@+id/Calcular_button"
         android:layout_width="136dp"
         android:layout_height="38dp"
         android:text="@string/Button_calcular"
@@ -123,7 +125,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.592"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/RadioGroup"
         app:layout_constraintVertical_bias="0.042" />
 
 
