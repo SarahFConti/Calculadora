@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.EditText
 import android.widget.Toast
+import com.example.calculadora.databinding.ActivityMainBinding
 
 
 //class MainActivity : AppCompatActivity() {
@@ -20,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.calculateButton.setOnClickListener { calculate()
+        binding.calcularButton.setOnClickListener { calculate()
         val toast = Toast.makeText(this, "Sucesso!", Toast.LENGTH_SHORT)
             toast.show()
         }
@@ -32,20 +33,18 @@ class MainActivity : AppCompatActivity() {
 
 
         //Buscar valores dos campos
-        val EditTextN1 = binding.EditTextN1
-        val EditTextN2 = binding.EditTextN2
+        val EditTextN1 = binding.campo1
+        val EditTextN2 = binding.campo2
 
-        // declarando do tipo inteiro
-        val campo1 = binding.campo1.text.toInt()
-        val campo2 = binding.campo2.text.toInt()
+        // converter para inteiro
+        val n1 = EditTextN1.text.toString().toInt()
+        val n2 =EditTextN2.text.toString().toInt()
 
         val selectedId =
-            binding.tipOptions.checkedRadioButtonId //variável que recebe o que tiver selecionado
+            binding.radioGroup.checkedRadioButtonId //variável que recebe o que tiver selecionado
         val tipconta = when (selectedId) {  //variável que recebe o tipo da conta
-//            R.id.option_twenty_percent -> 0.20
-//            R.id.option_eighteen_percent -> 0.18
-//            else -> 0.15
-//        }
+
+        }
 
     }
 
